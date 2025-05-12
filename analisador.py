@@ -14,9 +14,8 @@ with st.form("form_concorrente"):
     prazo_meses = st.number_input("Prazo (meses)", value=36, step=1)
     taxa_juros_anual = st.number_input("Taxa de juros anual (%)", value=18.0)
     cet_total = st.number_input("CET Total (%)", value=22.0)
-    submitted_concorrente = st.form_submit_button("Próximo")
 
-if submitted_concorrente:
+
     # --- Entrada da proposta BB ---
     st.markdown("## 💛 Proposta do Banco do Brasil")
     with st.form("form_bb"):
